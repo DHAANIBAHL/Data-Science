@@ -1,0 +1,9 @@
+import numpy as np              # Fast numerical computing with arrays and matrices
+import pandas as pd             # Data manipulation and analysis using DataFrames
+import matplotlib.pyplot as plt # Basic plotting and visualization
+import seaborn as sns           # Statistical data visualization with cleaner plots
+from sklearn import datasets    # Built-in datasets for ML practice and experiments
+
+print("All libraries imported successfully!")
+print(f"NumPy version: {np.__version__}")
+print(f"Pandas version: {pd.__version__}")
