@@ -1,0 +1,7 @@
+# Dot product (measures similarity)
+dot_product = np.dot(v1, v2)
+print(f"Dot product: {dot_product}")
+
+# Magnitude (length) of vector
+magnitude = np.linalg.norm(v1)
+print(f"Magnitude of v1: {magnitude:.4f}")
