@@ -1,0 +1,12 @@
+# Dataset represented as a matrix
+import numpy as np
+
+matrix = np.array([
+    [25, 50000, 1],
+    [30, 60000, 0],
+    [22, 45000, 1]
+])
+print(f"Matrix:\n{matrix}")
+
+print(f"Shape: {matrix.shape}")  # (rows, columns)
+print(f"Number of dimensions: {matrix.ndim}D")
