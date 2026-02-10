@@ -1,0 +1,26 @@
+
+# 3. Eigenvalues and Eigenvectors
+print("\n=== EIGENVALUES & EIGENVECTORS ===")
+"""
+Eigenvectors: Directions that don't change when transformation is applied
+Eigenvalues: How much the eigenvector is stretched/shrunk
+
+Think: When you stretch a rubber sheet, some directions stretch more than others
+"""
+C = np.array([[4, 2], [1, 3]])
+eigenvalues, eigenvectors = np.linalg.eig(C)
+
+print(f"Matrix C:\n{C}")
+print(f"\nEigenvalues: {eigenvalues}")
+print(f"Eigenvectors (columns):\n{eigenvectors}")
+
+# Verify: C * v = λ * v
+for i in range(len(eigenvalues)):
+    v = eigenvectors[:, i]
+    λ = eigenvalues[i]
+    left_side = C @ v
+    right_side = λ * v
+    print(f"\nFor eigenvector {i}:")
+    print(f"C @ v = {left_side}")
+    print(f"λ * v = {right_side}")
+    print(f"Are they equal? {np.allclose(left_side, right_side)}")
